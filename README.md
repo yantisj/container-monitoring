@@ -13,13 +13,14 @@ to be true.
 - Static Go Binary
 - Support both pull and push methods
 - Large number of clients (cAdvisor, node-exporter, experimental docker support in 1.13)
+- Supports advanced rule evaluation such as linear predictions and quantile analysis
 
 ### Caveats
 
 - No down-sampling support
 - No official long-term storage support (two week default)
 - No clustering (must run multiple instances for redundancy)
-- Must run separate alert manager
+- Must run separate alert manager (or depend on Grafana)
 
 ### Pull versus Push
 
