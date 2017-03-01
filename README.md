@@ -51,3 +51,12 @@ Creates beautiful charts from time series databases, including Prometheus and ot
 - Build /metrics endpoints directly into your application
 - Expose metrics on latency, number of calls and other metrics directly to Prometheus
 
+# Testing
+
+## Bring up Prometheus
+- Bring up docker-compose service: ```docker-compose up```
+- Examine the prometheus.yml configuration
+- Browse to Prometheus and [check targets](http://localhost:9090/targets)
+- [Search for metrics]()
+
+## Check Grafana
