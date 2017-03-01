@@ -57,6 +57,11 @@ Creates beautiful charts from time series databases, including Prometheus and ot
 - Bring up docker-compose service: ```docker-compose up```
 - Examine the prometheus.yml configuration
 - Browse to Prometheus and [check targets](http://localhost:9090/targets)
-- [Search for metrics]()
+- Browse targets
+- Search for metrics in database
 
-## Check Grafana
+## Configure Grafana
+- Login to (admin/secret) [Grafana](http://localhost:3000)
+- Add a datasource of type Prometheus, URL http://prometheus:9090
+- Create a dashboard and search metrics from Prometheus
+- Browse dashboards on Grafana.net

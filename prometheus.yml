@@ -19,7 +19,7 @@ scrape_configs:
   - job_name: 'prometheus'
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
-    scrape_interval: 60s
+    scrape_interval: 15s
 
     static_configs:
       - targets: ['prometheus:9090']
@@ -28,7 +28,7 @@ scrape_configs:
   - job_name: 'cadvisor'
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
-    scrape_interval: 60s
+    scrape_interval: 15s
 
     static_configs:
       - targets: ['cadvisor:8080']
@@ -37,7 +37,7 @@ scrape_configs:
   - job_name: 'node-exporter'
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
-    scrape_interval: 60s
+    scrape_interval: 15s
 
     static_configs:
       - targets: ['node-exporter:9100']
@@ -45,7 +45,7 @@ scrape_configs:
   - job_name: 'dcmap-api'
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
-    scrape_interval: 60s
+    scrape_interval: 15s
 
     static_configs:
       - targets: ['nginx-api:9080']

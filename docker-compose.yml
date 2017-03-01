@@ -11,10 +11,10 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     
 
-  # cadvisor:
-  #   image: google/cadvisor:latest
-  #   ports:
-  #     - 9080:8080
+  cadvisor:
+    image: google/cadvisor:latest
+    ports:
+      - 9080:8080
 
   node-exporter:
     image: prom/node-exporter
@@ -33,7 +33,7 @@ services:
     links:
       - prometheus
 
-networks:
-  default:
-    external:
-      name: dcmap_default
+# networks:
+#   default:
+#     external:
+#       name: dcmap_default
